@@ -12,7 +12,7 @@ module.exports = (app, token, apiURL) => {
 			return res.status(200).send({ ...data });
 		} catch (err) {
 			if (err.response) return res.status(err.response.status).send(err.response.data);
-			return res.status(500).send({ success: false, message: 'API is facing problem while processing your request! Please contact the API developer if the problem persists!' });
+			return res.status(500).send({ success: false, message: 'The API is facing problems while processing your request! Please contact the API developer if the problem persists!' });
 		}
 	});
 
@@ -27,7 +27,7 @@ module.exports = (app, token, apiURL) => {
 			return res.status(200).send({ ...data });
 		} catch (err) {
 			if (err.response) return res.status(err.response.status).send(err.response.data);
-			return res.status(500).send({ success: false, message: 'API is facing problem while processing your request! Please contact the API developer if the problem persists!' });
+			return res.status(500).send({ success: false, message: 'The API is facing problems while processing your request! Please contact the API developer if the problem persists!' });
 		}
 	});
 
@@ -43,7 +43,7 @@ module.exports = (app, token, apiURL) => {
 			return res.status(200).send({ ...data });
 		} catch (err) {
 			if (err.response) return res.status(err.response.status).send(err.response.data);
-			return res.status(500).send({ success: false, message: 'API is facing problem while processing your request! Please contact the API developer if the problem persists!' });
+			return res.status(500).send({ success: false, message: 'The API is facing problems while processing your request! Please contact the API developer if the problem persists!' });
 		}
 	});
 };
